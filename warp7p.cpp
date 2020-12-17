@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-#include "lodepng.h"
+#include <lodepng/lodepng.h>
 #include "nanoflann.hpp"
 
 // point cloud for nanoflann's kd-tree, for fast nearest neighbour approximation
