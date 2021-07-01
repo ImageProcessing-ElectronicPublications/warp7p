@@ -1,13 +1,2 @@
-PNAME := warp7p
-CXX := g++
-CXXFLAGS := -O2 --std=c++11 -Wall -Werror -pedantic
-LDFLAGS := -llodepng -s
-RM := rm -f
-
-all: $(PNAME)
-
-$(PNAME): $(PNAME).cpp
-	$(CXX) $(CXXFLAGS) $< -o $@ $(LDFLAGS)
-
-clean:
-	$(RM) $(PNAME)
+all:
+	g++ -O2 --std=c++11 -Wall -Werror -pedantic src/warp7p.cpp -llodepng -o warp7p
